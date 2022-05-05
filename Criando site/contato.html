@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiro site daora :)</title>
+</head>
+<body>
+    <div id="cabeçalho">
+        <center>
+                <nav>
+                    <img src="https://thumbs.dreamstime.com/b/boasvindas-s%C3%A3o-bem-vindas-%C3%A0-nuvem-mundial-portuguesa-brasileira-de-palavras-em-portugu%C3%AAs-brasileiro-com-marcador-diferentes-198762204.jpg"
+                    width="149px">
+                    <br>
+                    <a href="home.html"> Home </a>
+                    <a href="Sobre.html"> Sobre </a>
+                    <a href="servicos.html"> Serviços </a>
+                    <a href="contato.html"> Contato </a>
+                    <a href="cadastro.html">Cadastro</a>
+                </nav>
+            </center>
+            <b><font face="Arial" color="BLue" size="7">Contato</font></b>  
+    </div>
+    <div id="Formulario">
+        <form action="enviaemail.cs" method="get">
+            
+            <div id="nome">
+                <font face="Arial" color="black" size="3">Qual seu nome ? </font>
+                <input type="text" name="nome">
+            </div>
+            <div id="E-mail">
+                <font face="Arial" color="black" size="3">Qual seu email ? </font>
+                <input type="email" name="email">
+            </div>
+            <div id="Selecionar opção" >
+                <select name="estadoo"> 
+                    <option value="">Selecione o estado</option>
+                    <option value="">Santa Catarina</option>
+                    <option value="">Paraná</option>
+                    <option value="">Rio Grande do Sul</option>
+                </select>
+            </div>
+            <div id="data/horario">
+                <input type="datetime-local" name="data">
+            </div>
+            <div id="Sexo masculino/feminino">
+                <font face="Arial" color="Black" size="4">Sexo</font>
+                <br>
+                Masculino <input type="radio" name="sexo" value="M">
+                Feminino <input type="radio" name="sexo" value="F">
+                Outro <input type="radio" name="sexo" value="O">
+            </div>
+            <div id="Comida">
+                <font face="Arial" color="Black" size="4">Comidas</font>
+                <br>
+                <input type="checkbox" name="comida" value="lasanha"> Lasanha
+                <input type="checkbox" name="comida" value="pizza"> Pizza
+                <input type="checkbox" name="comida" value="carne"> Carne
+                <input type="checkbox" name="comida" value="arroz"> Arroz
+            </div>
+            <div id="Senha">
+                <font face="Arial" color="black" size="3">Qual sua senha ? </font>
+                <input type="password" name="senha">
+            </div>
+            <div id="Botão enviar/limpar">
+                <button type="submit" name="enviar" value="enviar" style="background-color:yellow">
+                    <font face="Arial" color="black" size="7">Enviar</font>
+                </button>
+                <input type="reset" name="limpar" value="limpar" style="background-color: blue; height: 40px; width: 80px;">
+            </div>
+        </form>
+    </div>
+     
+</body>
+
+</html>
