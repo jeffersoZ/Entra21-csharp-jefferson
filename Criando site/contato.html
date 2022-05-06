@@ -23,9 +23,8 @@
             <b><font face="Arial" color="BLue" size="7">Contato</font></b>  
     </div>
     <div id="Formulario">
-        <form action="enviaemail.cs" method="get">
-            
-            <div id="nome">
+        <form action="enviaemail.cs" method="get" enctype="multipart/form-data">    
+            <div id="nome" >
                 <font face="Arial" color="black" size="3">Qual seu nome ? </font>
                 <input type="text" name="nome">
             </div>
@@ -33,9 +32,9 @@
                 <font face="Arial" color="black" size="3">Qual seu email ? </font>
                 <input type="email" name="email">
             </div>
-            <div id="Selecionar opção" >
+            <div id="Selecionar estado" >
                 <select name="estadoo"> 
-                    <option value="">Selecione o estado</option>
+                    <option value="" >Selecione o estado</option>
                     <option value="">Santa Catarina</option>
                     <option value="">Paraná</option>
                     <option value="">Rio Grande do Sul</option>
@@ -47,9 +46,9 @@
             <div id="Sexo masculino/feminino">
                 <font face="Arial" color="Black" size="4">Sexo</font>
                 <br>
-                Masculino <input type="radio" name="sexo" value="M">
-                Feminino <input type="radio" name="sexo" value="F">
-                Outro <input type="radio" name="sexo" value="O">
+                <input type="radio" name="sexo" value="M"> Masculino
+                <input type="radio" name="sexo" value="F"> Feminino
+                <input type="radio" name="sexo" value="O"> Outro
             </div>
             <div id="Comida">
                 <font face="Arial" color="Black" size="4">Comidas</font>
@@ -59,9 +58,22 @@
                 <input type="checkbox" name="comida" value="carne"> Carne
                 <input type="checkbox" name="comida" value="arroz"> Arroz
             </div>
-            <div id="Senha">
+            <div id="foto">
+                <font face="Arial" style="color: black;" size="4">Insira uma foto sua.</font>
+                <br>
+                <input type="file" name="foto" multiple>
+            </div>
+            <div id="escondido">
+                <input type="hidden" name="escondido" value="1058483">
+            </div>
+            <div id="Senha" >
                 <font face="Arial" color="black" size="3">Qual sua senha ? </font>
-                <input type="password" name="senha">
+                <input type="password" name="senha" minlength="6" maxlength="20" required>
+            </div>
+            <div id="observacao">
+                <font face="Arial" style="color: black;" size="4">Tem alguma observação?</font>
+                <br>
+                <textarea name="nome" cols="20" rows="2"></textarea>
             </div>
             <div id="Botão enviar/limpar">
                 <button type="submit" name="enviar" value="enviar" style="background-color:yellow">
