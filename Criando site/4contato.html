@@ -4,32 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pasta css/css.css">
     <title>Primeiro site daora :)</title>
 </head>
 <body>
     <div id="cabeçalho">
         <center>
                 <nav>
-                    <img src="https://thumbs.dreamstime.com/b/boasvindas-s%C3%A3o-bem-vindas-%C3%A0-nuvem-mundial-portuguesa-brasileira-de-palavras-em-portugu%C3%AAs-brasileiro-com-marcador-diferentes-198762204.jpg"
-                    width="149px">
-                    <br>
-                    <a href="home.html"> Home </a>
-                    <a href="Sobre.html"> Sobre </a>
-                    <a href="servicos.html"> Serviços </a>
-                    <a href="contato.html"> Contato </a>
-                    <a href="cadastro.html">Cadastro</a>
+                    <img src="https://freepikpsd.com/file/2019/10/logo-circle-png-5-Transparent-Images.png" class="logosite" width="50px">
+                    <a href="1home.html"> Home </a>
+                    <a href="2Sobre.html"> Sobre </a>
+                    <a href="3servicos.html"> Serviços </a>
+                    <a href="4contato.html"> Contato </a>
+                    <a href="5cadastro.html">Cadastro</a>
                 </nav>
             </center>
-            <b><font face="Arial" color="BLue" size="7">Contato</font></b>  
+            <h1>Contato</h1>    
     </div>
     <div id="Formulario">
         <form action="enviaemail.cs" method="get" enctype="multipart/form-data">    
             <div id="nome" >
-                <font face="Arial" color="black" size="3">Qual seu nome ? </font>
+                Qual seu nome ?
                 <input type="text" name="nome">
             </div>
             <div id="E-mail">
-                <font face="Arial" color="black" size="3">Qual seu email ? </font>
+                Qual seu email ?
                 <input type="email" name="email">
             </div>
             <div id="Selecionar estado" >
@@ -44,14 +43,14 @@
                 <input type="datetime-local" name="data">
             </div>
             <div id="Sexo masculino/feminino">
-                <font face="Arial" color="Black" size="4">Sexo</font>
+                Sexo
                 <br>
                 <input type="radio" name="sexo" value="M"> Masculino
                 <input type="radio" name="sexo" value="F"> Feminino
                 <input type="radio" name="sexo" value="O"> Outro
             </div>
             <div id="Comida">
-                <font face="Arial" color="Black" size="4">Comidas</font>
+                Comidas
                 <br>
                 <input type="checkbox" name="comida" value="lasanha"> Lasanha
                 <input type="checkbox" name="comida" value="pizza"> Pizza
@@ -59,7 +58,7 @@
                 <input type="checkbox" name="comida" value="arroz"> Arroz
             </div>
             <div id="foto">
-                <font face="Arial" style="color: black;" size="4">Insira uma foto sua.</font>
+                Insira uma foto sua.
                 <br>
                 <input type="file" name="foto" multiple>
             </div>
@@ -67,19 +66,19 @@
                 <input type="hidden" name="escondido" value="1058483">
             </div>
             <div id="Senha" >
-                <font face="Arial" color="black" size="3">Qual sua senha ? </font>
+                Qual sua senha ?
                 <input type="password" name="senha" minlength="6" maxlength="20" required>
             </div>
             <div id="observacao">
-                <font face="Arial" style="color: black;" size="4">Tem alguma observação?</font>
+                Tem alguma observação?
                 <br>
                 <textarea name="nome" cols="20" rows="2"></textarea>
             </div>
             <div id="Botão enviar/limpar">
-                <button type="submit" name="enviar" value="enviar" style="background-color:yellow">
-                    <font face="Arial" color="black" size="7">Enviar</font>
+                <button type="submit" name="enviar" value="enviar">
+                    <h1>Enviar</h1>
                 </button>
-                <input type="reset" name="limpar" value="limpar" style="background-color: blue; height: 40px; width: 80px;">
+                <input type="reset" name="limpar" value="limpar">
             </div>
         </form>
     </div>

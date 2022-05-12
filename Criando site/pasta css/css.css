@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;500;600;800&family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+html, body{
+    margin: 0;
+    padding: 0;
+}
+*{
+    font-family: 'Inconsolata', monospace;
+}
+nav{
+    position: absolute;
+    left: 0;
+    top: 0%;
+    width: 100%;
+    height: 60px;
+    background-color: #F51814;
+}
+.logosite{
+    float: left;
+}
+/* configuração navegação */    
+nav a{
+    display: block;
+    width: auto;
+    float: left;
+    padding: 4px;
+    color: black;
+    margin-left: 10px;
+    line-height: 45px;
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+/*regras dos conteudos*/
+main{
+    padding: 60px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.homeArticule{
+    width: 43%;
+    background-color: #dac0c0cb;
+    margin: 15px 2%;
+    border-radius: 20px;
+    box-shadow: 0px 0px 8px 2px #dac0c0cb;
+    padding: 15px;
+    display: inline-block;
+}
+.homeArticule img{
+    float: left;
+    width: 190px;
+    margin-right: 10px;
+    border: 1px solid red;
+    border-radius: 20px;
+}
+.homeArticule h1{
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
+    color: red;
+    text-transform: uppercase;
+}
+.homeArticule p{
+    font-style: italic;
+}
+.homeArticule a{
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    width: auto;
+    padding: 4px;
+    background-color: red;
+    color: black;
+    border-radius: 20px;
+    float: right;
+}
+.homeArticule a:hover{
+    box-shadow: 0px 0px 8px 2px red;
+}
