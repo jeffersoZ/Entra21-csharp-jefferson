@@ -1,24 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;500;600;800&family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
-html, body{
+
+html,
+body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
-*{
+* {
     font-family: 'Inconsolata', monospace;
 }
-nav{
+nav {
     position: absolute;
     left: 0;
     top: 0%;
     width: 100%;
     height: 60px;
-    background-color: #F51814;
+    background-color: #950101;
 }
-.logosite{
+.logosite {
     float: left;
 }
-/* configuração navegação */    
-nav a{
+nav a {
     display: block;
     width: auto;
     float: left;
@@ -31,50 +34,93 @@ nav a{
     font-weight: 600;
     font-size: 18px;
 }
-/*regras dos conteudos*/
-main{
+main {
     padding: 60px;
     padding-left: 0px;
     padding-right: 0px;
 }
-.homeArticule{
-    width: 43%;
-    background-color: #dac0c0cb;
-    margin: 15px 2%;
-    border-radius: 20px;
-    box-shadow: 0px 0px 8px 2px #dac0c0cb;
+.homeArticule {
+    width: 665px;
+    background-color: rgb(255, 72, 72);
+    margin: 15px 30px;
+    border-radius: 15px;
     padding: 15px;
     display: inline-block;
+    min-height: 200px;
+    margin-bottom: 0px;
 }
-.homeArticule img{
+.homeArticule img {
     float: left;
     width: 190px;
     margin-right: 10px;
-    border: 1px solid red;
     border-radius: 20px;
 }
-.homeArticule h1{
+.homeArticule h1 {
     font-size: 22px;
     text-align: center;
     font-family: 'Dosis', sans-serif;
     font-weight: 600;
-    color: red;
+    color: #3D0000;
     text-transform: uppercase;
 }
-.homeArticule p{
+.homeArticule p {
     font-style: italic;
 }
-.homeArticule a{
-    text-decoration: none;
-    font-size: 20px;
-    display: inline-block;
-    width: auto;
+.homeArticule a {
+    width: 100px;
+    position: relative;
     padding: 4px;
-    background-color: red;
+    left: 100%;
+    margin-left: -50%;
+    font-size: 20px;
+    text-align: center;
     color: black;
-    border-radius: 20px;
-    float: right;
+    background-color: #c70909;
+    text-decoration: none;
+    border-radius: 17px;
+}   
+.homeArticule a:hover {
+    box-shadow: 0px 0px 8px 2px #950101;
 }
-.homeArticule a:hover{
-    box-shadow: 0px 0px 8px 2px red;
+.carousel{
+    display: block;
+    width: 100% ;
+    margin-top: 20px;
+    background: #950101;
+    padding-inline-start: 0px;
+    overflow: hidden;
+}
+.carousel li{
+    list-style: none;
+}
+.carousel li img{
+    float: left;
+    margin: 1%;
+    width: 23%;
+    border-radius: 20px;
+}
+footer{
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    background: #950101;
+}
+footer span{
+    display: inline-block;
+    width: 48%;
+    padding: 10px;
+    color: white;
+    size: 10px;
+}
+footer .assinatura{
+    color: rgb(0, 0, 0);
+    text-align: right;
+}
+.assinatura a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.assinatura a:hover::after{
+    content: " \01F60E ";
 }
