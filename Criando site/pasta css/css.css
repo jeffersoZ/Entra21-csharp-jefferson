@@ -1,14 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;500;600;800&family=Inconsolata:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('icofont.min.css');
 
-html,
-body {
+html{
+    overflow-y: auto;
+}
+
+html,body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    overflow-y: auto;
 }
 * {
     font-family: 'Inconsolata', monospace;
+}
+body{
+    background: pink;
+}
+body.pageEmpresa{
+    background: url('../imagens/nebulosaaa.jpg') no-repeat center fixed;
+    background-size: 100vw;
+}
+body.pageservicos{
+    background: url('../imagens/nebulosaaa.jpg') no-repeat center fixed ;
+    background-size: 100vw;
 }
 nav {
     position: absolute;
@@ -40,7 +54,7 @@ main {
     padding-right: 0px;
 }
 .homeArticule {
-    width: 665px;
+    width: 43%;
     background-color: rgb(255, 72, 72);
     margin: 15px 30px;
     border-radius: 15px;
@@ -56,7 +70,7 @@ main {
     border-radius: 20px;
 }
 .homeArticule h1 {
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
     font-family: 'Dosis', sans-serif;
     font-weight: 600;
@@ -98,6 +112,32 @@ main {
     margin: 1%;
     width: 23%;
     border-radius: 20px;
+}
+/*Pagina servicos*/
+body.pageservicos table{
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid #c70909;
+}
+body.pageservicos h1{
+    color: #c70909;
+    font-size: 40px;
+    font-family: 'Dosis', sans-serif;
+    font: 600;
+    margin: 10px;
+}
+body.pageservicos h1.titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 70px;
+    margin: 20px;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+}
+body.pageservicos h3{
+    font-size: 30px;
+    margin: 5px;
+    font-family: 'Dosis', sans-serif;
+    font: 200;
 }
 footer{
     width: 100%;
