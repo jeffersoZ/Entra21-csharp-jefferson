@@ -16,14 +16,6 @@ html,body {
 body{
     background: pink;
 }
-body.pageEmpresa{
-    background: url('../imagens/nebulosaaa.jpg') no-repeat center fixed;
-    background-size: 100vw;
-}
-body.pageservicos{
-    background: url('../imagens/nebulosaaa.jpg') no-repeat center fixed ;
-    background-size: 100vw;
-}
 nav {
     position: absolute;
     left: 0;
@@ -32,26 +24,35 @@ nav {
     height: 60px;
     background-color: #950101;
 }
-.logosite {
-    float: left;
-}
 nav a {
     display: block;
     width: auto;
     float: left;
     padding: 4px;
     color: black;
-    margin-left: 10px;
+    margin-left: 30px;
     line-height: 45px;
     text-decoration: none;
     font-family: 'Dosis', sans-serif;
     font-weight: 600;
     font-size: 18px;
 }
+.logosite {
+    float: left;
+}
 main {
     padding: 60px;
     padding-left: 0px;
     padding-right: 0px;
+}
+.titulosite h1{
+    font-family: 'Dosis', sans-serif!important;
+    text-align: center!important;
+    font-weight: 600!important;
+    font-size: 50px!important;
+    color: #3D0000!important;
+    margin: 10px!important;
+    text-transform: uppercase!important;
 }
 .homeArticule {
     width: 43%;
@@ -104,6 +105,7 @@ main {
     padding-inline-start: 0px;
     overflow: hidden;
 }
+
 .carousel li{
     list-style: none;
 }
@@ -112,6 +114,24 @@ main {
     margin: 1%;
     width: 23%;
     border-radius: 20px;
+}
+/*Pagina empresa*/
+.diretoria{
+    margin: 15px 30px;
+}
+.homeArticule img.diferente{
+    float: right;
+    width: 30%;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+.pessoas{
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+}
+.pessoas p{
+    font-size: 20px;
 }
 /*Pagina servicos*/
 body.pageservicos table{
@@ -126,20 +146,64 @@ body.pageservicos h1{
     font: 600;
     margin: 10px;
 }
-body.pageservicos h1.titulo{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 70px;
-    margin: 20px;
-    margin-bottom: 0px;
-    text-transform: uppercase;
-}
 body.pageservicos h3{
     font-size: 30px;
     margin: 5px;
     font-family: 'Dosis', sans-serif;
     font: 200;
 }
+/*Pagina Contato*/
+form{
+    width: 700px;
+    min-height: 540px;
+    margin: 0px auto;
+}
+.form{
+    width: 100%;
+    display: inline-block;
+    float: left;
+    margin-bottom: 10px;
+    margin-left: 2%;
+}
+.form input,
+.form label,
+.form textarea,
+.form select{
+    width: 100%;
+    height: 45px;
+    border: 1px;
+    text-indent: 15px;
+    border-radius: 5px;
+}
+.form textarea{
+    height: 200px;
+}
+.form button{
+    width: 120px;
+    height: 45px;
+    background: #950101;
+    border: unset;
+    color: white;
+    font-size: 18px;
+}
+.form button:hover{
+	cursor: pointer;
+	background: #000;
+}
+.form label{
+	color: #b51b2d;
+}
+
+.form.grupo{
+    width: 48%;
+}
+.form.fora{
+    width: 98%;
+}
+/*pagecadastro*/
+
 footer{
+    /*footer*/
     width: 100%;
     height: 40px;
     position: fixed;

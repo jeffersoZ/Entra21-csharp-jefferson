@@ -9,79 +9,65 @@
     <link rel="stylesheet" href="css/icofont.min.css">
     <title>Primeiro site daora :)</title>
 </head>
-<body>
-    <div id="cabeçalho">
-        <nav>
-            <a href="1home.html"> Home </a>
-             <a href="2Sobre.html"> Sobre </a>
-            <a href="3servicos.html"> Serviços </a>
-             <a href="4contato.html"> Contato </a>
-             <a href="5cadastro.html"> Cadastro </a>
-        </nav>
-    <h1>Contato</h1>    
-    </div>
-    <div id="Formulario">
-        <form action="enviaemail.cs" method="get" enctype="multipart/form-data">    
-            <div id="nome" >
-                Qual seu nome ?
-                <input type="text" name="nome">
+<body class="pagecontato">
+    <header>
+        <div id="cabeçalho">
+            <nav>
+                <img src="imagens/logo.png" class="logosite" width="100px">
+                <a href="1home.html"> Home </a>
+                <a href="2Sobre.html"> Sobre </a>
+                <a href="3servicos.html"> Serviços </a>
+                <a href="4contato.html"> Contato </a>
+                <a href="5cadastro.html">Cadastro</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+            <div class="titulosite">
+                <h1>Contato</h1>    
             </div>
-            <div id="E-mail">
-                Qual seu email ?
-                <input type="email" name="email">
-            </div>
-            <div id="Selecionar estado" >
-                <select name="estadoo"> 
-                    <option value="" >Selecione o estado</option>
-                    <option value="">Santa Catarina</option>
-                    <option value="">Paraná</option>
-                    <option value="">Rio Grande do Sul</option>
-                </select>
-            </div>
-            <div id="data/horario">
-                <input type="datetime-local" name="data">
-            </div>
-            <div id="Sexo masculino/feminino">
-                Sexo
-                <br>
-                <input type="radio" name="sexo" value="M"> Masculino
-                <input type="radio" name="sexo" value="F"> Feminino
-                <input type="radio" name="sexo" value="O"> Outro
-            </div>
-            <div id="Comida">
-                Comidas
-                <br>
-                <input type="checkbox" name="comida" value="lasanha"> Lasanha
-                <input type="checkbox" name="comida" value="pizza"> Pizza
-                <input type="checkbox" name="comida" value="carne"> Carne
-                <input type="checkbox" name="comida" value="arroz"> Arroz
-            </div>
-            <div id="foto">
-                Insira uma foto sua.
-                <br>
-                <input type="file" name="foto" multiple>
-            </div>
-            <div id="escondido">
-                <input type="hidden" name="escondido" value="1058483">
-            </div>
-            <div id="Senha" >
-                Qual sua senha ?
-                <input type="password" name="senha" minlength="6" maxlength="20" required>
-            </div>
-            <div id="observacao">
-                Tem alguma observação?
-                <br>
-                <textarea name="nome" cols="20" rows="2"></textarea>
-            </div>
-            <div id="Botão enviar/limpar">
-                <button type="submit" name="enviar" value="enviar">
-                    <h1>Enviar</h1>
-                </button>
-                <input type="reset" name="limpar" value="limpar">
-            </div>
-        </form>
-    </div>
-     
-</body>
+        <div id="Formulario">
+            <form action="enviaemail.cs" method="get" enctype="multipart/form-data">
 
+                <div class="form fora">
+                    <label>Nome</label>
+                    <input type="text" name="nome">
+                </div>
+
+                    <div class="form grupo">
+                        <label>E-mail</label>
+                        <input type="email" name="email">
+                    </div>
+
+                    <div class="form grupo">
+                        <label>Whats</label>
+                        <input type="text" name="Whats">                
+                    </div>
+                    
+                <div class="form fora">
+                    <select name="setor"> 
+                        <option value="" >SETOR</option>
+                        <option value="">RH</option>
+                        <option value="">Diretoria</option>
+                        <option value="">Atendimento especial</option>
+                        <option value="">Outro</option>
+                    </select>
+                </div>  
+
+                <div class="form fora">
+                    <label>Sua mensagem</label>
+                    <textarea name="nome" cols="20" rows="2"></textarea>
+                </div>
+
+                <div class="form fora">
+                    <button type="submit" name="enviar" value="enviar">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <span class="direitos">2022 &copy; todos os direitos reservados.</span>
+        <span class="assinatura">Feito por <a href="https://twitch.tv/" target="_blank">jefferson</a></span>
+    </footer>  
+</body>
 </html>
