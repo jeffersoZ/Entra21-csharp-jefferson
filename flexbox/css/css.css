@@ -1,0 +1,37 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    margin: 1%;
+    width: 98%;
+    display: flex;
+    background-color: green;
+    min-height: 270px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.coluna{
+    width: 20%;
+    max-height: 150px;
+}
+.coluna.Orange{
+    background-color: orange;
+    margin: 5px;
+    font-size: 30px;
+    text-align: center;
+}
+.coluna.Blue{
+    background-color: blue;
+    margin: 5px;
+    font-size: 30px;
+    text-align: center;
+}
+.coluna.Red{
+    background-color: red;
+    margin: 5px;
+    font-size: 30px;
+    text-align: center;
+}
